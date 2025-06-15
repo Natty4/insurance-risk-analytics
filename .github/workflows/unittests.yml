@@ -37,4 +37,5 @@ jobs:
         run: python --version
 
       - name: Run unit tests with pytest
-        run: pytest tests/
+        run: |
+          pytest --maxfail=1 --disable-warnings -v tests/
