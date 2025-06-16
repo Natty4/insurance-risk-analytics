@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  clean_data:
+    cmd: python src/scripts/run_cleaning.py
+    deps:
+    - path: data/raw/insurance_data.csv
+      hash: md5
+      md5: f6b7009b68ae21372b7deca9307fbb23
+      size: 529363713
+    - path: src/scripts/run_cleaning.py
+      hash: md5
+      md5: 8dfc2d050681946c1ceb92e8c1f6e9f9
+      size: 1367
+    - path: src/utils/cleaning_and_imputation_functions.py
+      hash: md5
+      md5: 3e1568414a1f2bd6cf64002a81a5124c
+      size: 5848
+    outs:
+    - path: data/processed/insurance_data_cleaned.csv
+      hash: md5
+      md5: f978be34641ad3ad71e88b23f193f7a7
+      size: 493804374
+    - path: metrics/summary.json
+      hash: md5
+      md5: 8c61d3584b02fdf91a98012020e7bdd7
+      size: 168
