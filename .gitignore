@@ -331,7 +331,7 @@ $RECYCLE.BIN/
 
 
 
-# Data files
+# Ignore all files in the raw and processed data folders
 # Ignore all files in the raw and processed data folders
 data/raw/*
 data/processed/*
@@ -340,20 +340,10 @@ data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Allow DVC files to be tracked by Git
+# Allow DVC-tracked files to be tracked by Git
 !data/raw/*.csv.dvc
 !data/processed/*.csv.dvc
 
-# Ignore DVC-specific tracking files (e.g., config and cache)
-.dvc/*
-.dvc/config
-.dvc/.gitignore
-
-# Ignore the DVC cache directory (don't track it in Git)
-.cache/
-
-# Make sure we don't commit temporary DVC-related files
-*.dvc
 
 # Logs
 
