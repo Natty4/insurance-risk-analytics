@@ -4,7 +4,7 @@ stages:
     deps:
       - data/raw/insurance_data.csv
       - src/scripts/run_cleaning.py
-      - src/utils/cleaning_and_imputation_functions.py
+      - src/utils/eda_cleaning_and_imputation_functions.py
     outs:
       - data/processed/insurance_data_cleaned.csv
     metrics:

@@ -1,27 +1,18 @@
 import json
 import pandas as pd
-
-import sys
-import pathlib
+import sys, pathlib
 
 # Dynamically get the root directory (project root where `src/` is located)
 ROOT_DIR = pathlib.Path(__file__).resolve().parents[1]
 SRC_DIR = ROOT_DIR
 
-import sys
-# print("\n".join(sys.path))
-
-# Add src/ to sys.path
 sys.path.append(str(SRC_DIR))
 
-
-# print("\n".join(sys.path), '---->')
-
-from utils.cleaning_and_imputation_functions import preprocess_data
+from src.utils.eda_cleaning_and_imputation_functions import preprocess_data
 
 # File paths
-input_file = "data/raw/insurance_data.csv"
-output_file = "data/processed/insurance_data_cleaned.csv"
+input_file = "../data/raw/insurance_data.csv"
+output_file = "../data/processed/insurance_data_cleaned.csv"
 metrics_file = "metrics/summary.json"
 
 def main():
