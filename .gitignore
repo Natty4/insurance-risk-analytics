@@ -332,17 +332,17 @@ $RECYCLE.BIN/
 
 
 # Ignore all files in the raw and processed data folders
-# Ignore all files in the raw and processed data folders
 data/raw/*
 data/processed/*
 
-# But do not ignore .gitkeep files (to keep the directory structure intact)
+# Do not ignore .gitkeep files (to keep empty directories in Git)
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Allow DVC-tracked files to be tracked by Git
+# Allow .dvc files to be tracked by Git (explicitly un-ignore these)
 !data/raw/*.csv.dvc
 !data/processed/*.csv.dvc
+
 
 
 # Logs
