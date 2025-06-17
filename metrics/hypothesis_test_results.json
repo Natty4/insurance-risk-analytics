@@ -1,0 +1,45 @@
+[
+    {
+        "metric": "ClaimFrequency",
+        "group_col": "Province",
+        "group_a": "Gauteng",
+        "group_b": "KwaZulu-Natal",
+        "t_stat": 0.0517652096048627,
+        "p_value": NaN,
+        "significant": false
+    },
+    {
+        "metric": "ClaimFrequency",
+        "group_col": "PostalCode",
+        "group_a": 2000,
+        "group_b": 122,
+        "t_stat": 0.28047630594818296,
+        "p_value": NaN,
+        "significant": false
+    },
+    {
+        "metric": "Margin",
+        "group_col": "PostalCode",
+        "group_a": 2000,
+        "group_b": 122,
+        "t_stat": 1.1639145988804176,
+        "p_value": 0.24446241842452004,
+        "significant": false
+    },
+    {
+        "metric": "ClaimFrequency",
+        "group_col": "Gender",
+        "group_a": "Male",
+        "group_b": "Female",
+        "t_stat": 0.13029415467747138,
+        "p_value": NaN,
+        "significant": false
+    },
+    {
+        "group_col": "Gender",
+        "target_col": "ClaimOccurred",
+        "chi2": 16.647437409874257,
+        "p_value": 0.00024269168531192712,
+        "significant": true
+    }
+]
