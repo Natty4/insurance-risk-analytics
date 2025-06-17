@@ -1,1 +1,10 @@
 pytest
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+xgboost
+shap
+scikit-learn
+category_encoders
